@@ -15,7 +15,7 @@ add_subdirectory(third_party/googletest)
 
 include_directories(${gtest_SOURCE_DIR}/include)
 
-add_executable(tests Yo_test.cc Yo.cc)
+add_executable(tests Yo.cc Node.cc node_test.cc)
 target_link_libraries(tests gtest_main)
 
 add_test(NAME whatup COMMAND tests)
